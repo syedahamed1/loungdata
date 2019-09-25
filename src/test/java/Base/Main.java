@@ -31,7 +31,7 @@ public class Main {
 	public static Logger log = Logger.getLogger("devpinoyLogger");
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
-	
+	//setup
 	@BeforeSuite
 	public void setup() {
 		
@@ -42,6 +42,7 @@ public class Main {
 				try {
 					config.load(fis);
 					log.debug("config property loaded.");
+					System.out.println("log added");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
